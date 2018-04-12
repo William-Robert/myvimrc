@@ -1,0 +1,26 @@
+nnoremap <F9> <esc>:w<CR>:!clear;python %<CR>
+inoremap kj <esc>
+nnoremap m :
+nnoremap <space>l :wincmd w<cr>
+nnoremap <space>h :wincmd h<cr>
+nnoremap <space>j :wincmd 18j
+nnoremap <space>k :wincmd 18k
+
+nnoremap ev :vsplit $/.vimrc<cr>
+
+syntax on
+
+set number
+set splitright
+set cindent
+set modifiable
+
+
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
